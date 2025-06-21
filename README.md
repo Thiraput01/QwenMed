@@ -13,7 +13,6 @@ QwenMed is a medical Large Language Model (LLM) fine-tuned on the Qwen3-1.7B mod
 
 
 ## Usage
-Inference
 The `notebooks/QwenMed_inference.ipynb` notebook demonstrates how to load the model and perform inference. 
 You can switch between non-thinking and reasoning modes to observe different response styles.
 
