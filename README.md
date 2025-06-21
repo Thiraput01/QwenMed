@@ -14,7 +14,7 @@ QwenMed is a medical Large Language Model (LLM) fine-tuned on the Qwen3-1.7B mod
 
 ## Usage
 Inference
-The notebooks/QwenMed_inference.ipynb notebook demonstrates how to load the fine-tuned Thiraput01/QwenMed-1.7B-Reasoning model and perform inference. 
+The `notebooks/QwenMed_inference.ipynb` notebook demonstrates how to load the model and perform inference. 
 You can switch between non-thinking and reasoning modes to observe different response styles.
 
 **For Non-Thinking**
@@ -80,25 +80,23 @@ _ = model.generate(
 
 
 # Training
-The notebooks/QwenMed_train.ipynb notebook outlines the process for fine-tuning the QwenMed model.
+The `notebooks/QwenMed_train.ipynb` notebook provides the process for fine-tuning the QwenMed model.
 
 
-# Dataset Preparation
-The model is fine-tuned on a mix of reasoning and non-reasoning medical datasets:
+# Dataset Used
 
-FreedomIntelligence/medical-o1-reasoning-SFT (for reasoning data)
-Laurent1/MedQuad-MedicalQnADataset_128tokens_max (for non-reasoning data)
-The training data is configured to be 80% reasoning-based conversations and 20% of non-reasoning conversations.
+- [FreedomIntelligence/medical-o1-reasoning-SFT](https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT)
+- [Laurent1/MedQuad-MedicalQnADataset_128tokens_max](https://huggingface.co/datasets/Laurent1/MedQuad-MedicalQnADataset_128tokens_max)
 
 
 # Training Configuration
-Base Model: `unsloth/Qwen3-1.7B-unsloth-bnb-4bit`
-LoRA Parameters: `r=32, alpha=64`
-Batch Size: `2`
-gradient_accumulation_steps = `8`
-Epochs: `2`
-Learning Rate: `5e-5`
-Scheduler: `CosineAnnealingLR`
+- Base Model: `unsloth/Qwen3-1.7B-unsloth-bnb-4bit`
+- Epochs: `2`
+- Learning Rate: `5e-5`
+- Scheduler: `CosineAnnealingLR`
+- LoRA Parameters: `r=32, alpha=64`
+- Batch Size: `2`
+- Gradient Accumulation Steps = `8`
 
 
 # Results
