@@ -9,7 +9,7 @@ QwenMed is a Large Language Model (LLM) (Qwen3-1.7B) fine-tuned on the medical d
 * **Medical Question Answering**: Provides responses to medical queries.
 * **Reasoning Capability**: Can generate detailed thought processes (Chain-of-Thought) before providing a concise answer.
 * **Efficient Fine-tuning**: Unsloth library for PEFT.
-* **Hugging Face Integration**: Models are pushed to and loaded from Hugging Face Hub. [HERE](https://huggingface.co/Thiraput01/QwenMed-1.7B-Reasoning) (Note: Only adapters)
+* **Hugging Face Integration**: Models are pushed to and loaded from Hugging Face Hub. [HERE](https://huggingface.co/collections/Thiraput01/qwenmed-68775506ab2b8ae59c6a9ef6)
 
 
 ## Usage
