@@ -1,6 +1,6 @@
 # QwenMed
 
-QwenMed is a Large Language Model (LLM) fine-tuned on the Qwen3-1.7B model using Unsloth for QLoRA for medical question answering.
+QwenMed is a Large Language Model (LLM) (Qwen3-1.7B) fine-tuned on the medical datasets for medical QA tasks.
 
 ---
 
